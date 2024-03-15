@@ -1,5 +1,5 @@
 /* this framework was influenced by many other frameworks like pico, classless, skeleton, bootstrap, and materialize. */
-
+/* if everything is tooooo thin in the page, change the body padding to 0 for small screens */
 /* reset */
 
 *,
@@ -42,15 +42,6 @@ li {
 
 /* typography */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-
-}
 
 .title1 {
   font-size: 3rem;
@@ -125,7 +116,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   color: hsl(205, 20%, 32%);
-  padding:0 2rem;
+  padding: 0 2rem;
   justify-content: center;
 }
 
@@ -161,15 +152,23 @@ footer {
 
 
 .container2 {
-  width:100%;
-    margin-inline: auto;
-    padding-inline: 6rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 6rem;
 
-  }
+}
+
+.container3 {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 13rem;
+  text-align: center;
+
+}
 
 
 section {
-  margin-block: 2rem;
+  margin-block: 3rem;
 }
 
 
@@ -184,7 +183,8 @@ section {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+[role="button"] {
   padding: 0 2rem;
   color: #555;
   text-align: center;
@@ -220,12 +220,112 @@ input[type="button"]:focus {
 .btn1 {
   background-color: #24333e;
   color: white;
+
 }
+
+
 
 .btn1:hover {
   background-color: #fff;
 }
 
+
+
+/* cards */
+
+.card {
+  align-content: center;
+  border: solid 2px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: .25rem;
+}
+
+.card>.content {
+  padding: 1rem 1rem;
+}
+
+.card>.title {
+  border-bottom: solid 2px;
+  background-color: #f4f5f6;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  color: #415462;
+  font-weight: 700;
+}
+
+.card>.more {
+  border-top: solid 1px;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: auto;
+}
+
+.card>.img {
+  border-bottom: solid 2px;
+  background-color: #f4f5f6;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* code */
+
+
+pre {
+  color: #43a047;
+  background-color: #24333e;
+  overflow-y: scroll;
+  max-height: 300px;
+
+}
+
+
+
+
+
+/* accordions */
+
+
+details {
+  display: block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(205, 20%, 94%);
+
+}
+
+
+details p {
+  padding-top: 1rem;
+
+}
+
+details summary[role=button] {
+  width: 100%;
+  padding-block: .75rem;
+  text-align: left;
+  border-radius: .25rem;
+}
+
+
+
+.dark {
+  background-color: #596B78;
+  color: #fff;
+
+}
+
+.darker {
+  background-color: #24333e;
+  color: #fff;
+}
 
 
 
@@ -236,132 +336,131 @@ input[type="button"]:focus {
 
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 0;
-margin-inline: 0.75rem;
-text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-inline: 0.75rem;
+  text-align: justify;
 
 }
 
 .row>* {
-	box-sizing: border-box;
-	flex-shrink: 0;
-	width: 100%;
-	max-width: 100%;
-scroll-padding-inline: 0.75rem;
-	margin-top: 1rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
 }
 
 .col {
-	flex: 1 0 0%
+  flex: 1 0 0%
 }
 
 
 .col-1 {
-	flex: 0 0 auto;
-	width: 8.33333333%;
+  flex: 0 0 auto;
+  width: 8.33333333%;
 }
 
 .col-2 {
-	flex: 0 0 auto;
-	width: 16.66666667%
+  flex: 0 0 auto;
+  width: 16.66666667%
 }
 
 .col-3 {
-	flex: 0 0 auto;
-	width: 25%
+  flex: 0 0 auto;
+  width: 25%
 }
 
 .col-4 {
-	flex: 0 0 auto;
-	width: 33.33333333%
+  flex: 0 0 auto;
+  width: 33.33333333%
 }
 
 .col-5 {
-	flex: 0 0 auto;
-	width: 41.66666667%
+  flex: 0 0 auto;
+  width: 41.66666667%
 }
 
 .col-6 {
-	flex: 0 0 auto;
-	width: 50%
+  flex: 0 0 auto;
+  width: 50%
 }
 
 .col-7 {
-	flex: 0 0 auto;
-	width: 58.33333333%
+  flex: 0 0 auto;
+  width: 58.33333333%
 }
 
 .col-8 {
-	flex: 0 0 auto;
-	width: 66.66666667%
+  flex: 0 0 auto;
+  width: 66.66666667%
 }
 
 .col-9 {
-	flex: 0 0 auto;
-	width: 75%
+  flex: 0 0 auto;
+  width: 75%
 }
 
 .col-10 {
-	flex: 0 0 auto;
-	width: 83.33333333%
+  flex: 0 0 auto;
+  width: 83.33333333%
 }
 
 .col-11 {
-	flex: 0 0 auto;
-	width: 91.66666667%
+  flex: 0 0 auto;
+  width: 91.66666667%
 }
 
 .col-12 {
-	flex: 0 0 auto;
-	width: 100%
+  flex: 0 0 auto;
+  width: 100%
 }
 
 
 
 .push-1 {
-	margin-left: 8.33333333%
+  margin-left: 8.33333333%
 }
 
 .push-2 {
-	margin-left: 16.66666667%;
+  margin-left: 16.66666667%;
 }
 
 .push-3 {
-	margin-left: 25%
+  margin-left: 25%
 }
 
 .push-4 {
-	margin-left: 33.33333333%
+  margin-left: 33.33333333%
 }
 
 .push-5 {
-	margin-left: 41.66666667%
+  margin-left: 41.66666667%
 }
 
 .push-6 {
-	margin-left: 50%
+  margin-left: 50%
 }
 
 .push-7 {
-	margin-left: 58.33333333%
+  margin-left: 58.33333333%
 }
 
 .push-8 {
-	margin-left: 66.66666667%
+  margin-left: 66.66666667%
 }
 
 .push-9 {
-	margin-left: 75%
+  margin-left: 75%
 }
 
 .push-10 {
-	margin-left: 83.33333333%
+  margin-left: 83.33333333%
 }
 
 .push-11 {
-	margin-left: 91.66666667%
+  margin-left: 91.66666667%
 }
 
 
@@ -369,7 +468,7 @@ scroll-padding-inline: 0.75rem;
 /* ---------------------------------- */
 
 
-.bord{
+.bord {
   border: 2px solid;
 }
 
@@ -386,7 +485,7 @@ scroll-padding-inline: 0.75rem;
 
 .row.col-center {
   justify-content: center;
-  
+
   /* Align columns to the center */
 }
 
@@ -412,10 +511,12 @@ scroll-padding-inline: 0.75rem;
   align-items: center;
   height: 100px;
 }
+
 /* center */
 .center {
   text-align: center;
 }
+
 /* right */
 .right {
   text-align: right;
@@ -425,26 +526,20 @@ scroll-padding-inline: 0.75rem;
 
 
 
-
-.hero {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: calc(100svh - 5rem);
-  margin: 0;
-width: 100%;
-
+.ex1 {
+  margin-block: 3rem;
+  border: solid 1px;
 }
 
+.ex {
+  margin-bottom: .25rem;
+  padding-block: .5rem;
+  background-color: #24333e;
+  color: white;
 
-.hero h1 {
-
-  margin-bottom: 2rem;
+  text-align: center;
+  border: solid 1px white;
 }
-
-
 
 
 
@@ -517,70 +612,255 @@ I will add prebuilt nav, cards, and accordions soon. Stay tuned, and happy codin
 
 
 
-@media (max-width: 992px) {
+
+@media (max-width: 767px) {
+
+  body>header,
+  body>main,
+  body>footer {
+    width: 100%;
+    margin-inline: auto;
+    text-align: justify;
+    padding-inline: 0;
+
+  }
+
 
   .container {
-   width: 100%;
-    padding-inline: 2rem;
-   margin-inline: auto;
+    width: 100%;
+    padding-inline: 0;
+    margin-inline: auto;
   }
+
   .container2 {
-   width: 100%;
+    width: 100%;
+    padding-inline: 0;
+    margin-inline: auto;
+  }
+
+  .container3 {
+    width: 100%;
+    padding-inline: 0.5rem;
+    margin-inline: auto;
+  }
+
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1023px) and (orientation:landscape) {
+
+  .container {
+    width: 100%;
+    padding-inline: 2rem;
+    margin-inline: auto;
+  }
+
+  .container2 {
+    width: 100%;
     padding-inline: 4rem;
     margin-inline: auto;
   }
+
+  .container3 {
+    width: 100%;
+    padding-inline: 4rem;
+    margin-inline: auto;
   }
 
-  @media (min-width:992px) and (max-width: 1600px) and (orientation:landscape) {
+}
 
-    .container {
-      width: 100%;
-      padding-inline: 2rem;
-      margin-inline: auto;
-    }
-    .container2 {
-      width: 100%;
-      padding-inline: 4rem;
-      margin-inline: auto;
-    }
+
+
+
+@media (max-width: 767px) {
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .push-1,
+  .push-2,
+  .push-3,
+  .push-4,
+  .push-5,
+  .push-6,
+  .push-7,
+  .push-8,
+  .push-9,
+  .push-10,
+  .push-11 {
+    margin-left: 0;
   }
 
 
 
+  .card {
+    align-content: center;
+    margin-left: 0;
 
-  @media (max-width: 992px) {
-
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-9,
-    .col-10,
-    .col-11,
-    .col-12 {
-      flex: 0 0 auto;
-      width: 100%;
-    }
-  
-    .push-1,
-    .push-2,
-    .push-3,
-    .push-4,
-    .push-5,
-    .push-6,
-    .push-7,
-    .push-8,
-    .push-9,
-    .push-10,
-    .push-11 {
-      margin-left: 0;
-    }
   }
-  
-  
 
 
+
+}
+
+
+
+
+/* use + to select the first col-1 only, and > to select whatever is nested under smth, and ~ to select everything 
+with the same class under smth. */
+
+
+.righto {
+  text-align: right;
+}
+
+
+/* navbar style 1 */
+
+nav ul:first-child>li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.8rem .6rem;
+}
+
+@media (max-width: 767px) {
+  nav ul:first-child {
+    text-align: center;
+  }
+
+  nav ul:first-child>li:first-child:after {
+    content: " \2261";
+  }
+
+  nav ul:first-child>li:not(:first-child):not(.sticky) {
+    display: none;
+  }
+
+  nav ul:first-child:hover>li:not(:first-child):not(.sticky) {
+    display: block;
+    float: none !important;
+    user-select: none;
+    color: #415462;
+  }
+}
+
+/* navbar style2 */
+
+@media (max-width: 767px) {
+  nav {
+    user-select: none;
+    color: #415462;
+  }
+
+  nav .col-1 {
+    flex: 1 0 0%;
+    text-align: center;
+    margin-top: 0;
+    user-select: none;
+    color: #4d606d;
+  }
+}
+
+
+@media (min-width:768px) and (max-width: 1023px) and (orientation:landscape) {
+  nav {
+    user-select: none;
+    color: #415462;
+  }
+
+  nav .col-1 {
+
+    text-align: center;
+
+    user-select: none;
+    color: #4d606d;
+  }
+
+}
+
+
+
+@media (max-width: 767px) {
+  [role="button"] {
+    padding: 0 2rem;
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0;
+
+  }
+}
+
+
+@media (max-width: 767px) {
+
+
+
+  .card {
+    align-content: center;
+    border: solid 2px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    /* margin-left: 2rem; */
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+  }
+
+  .card>.content {
+    padding: .5rem .5rem;
+  }
+
+}
+
+@media (min-width:768px) and (max-width: 1023px) and (orientation:landscape) {
+  .card {
+    align-content: center;
+    border: solid 2px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    margin-left: .25rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+  }
+
+  .card>.content {
+    padding: .5rem .5rem;
+  }
+
+}
+
+
+    .hero{
+  padding-top: 5rem;
+}
+
+
+@media (max-width: 767px) {
+
+  .hero{
+    padding-top: 1rem;
+  }
+
+  }
