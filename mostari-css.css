@@ -453,7 +453,7 @@ details summary[role=button] {
 }
 
 /* I will add prebuilt nav, cards, and accordions soon. Stay tuned, and happy coding! */
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   body {
     font-size: 1rem;
   }
@@ -512,25 +512,25 @@ details summary[role=button] {
     width: 100%;
     margin-inline: auto;
     text-align: justify;
-    padding-inline: 0;
+    padding-inline: 2rem;
 
   }
 
   .container {
     width: 100%;
-    padding-inline: 0;
+    padding-inline: 1rem;
     margin-inline: auto;
   }
 
   .container2 {
     width: 100%;
-    padding-inline: 0;
+    padding-inline: 2rem;
     margin-inline: auto;
   }
 
   .container3 {
     width: 100%;
-    padding-inline: 0.5rem;
+    padding-inline: 4rem;
     margin-inline: auto;
   }
 }
@@ -596,6 +596,9 @@ details summary[role=button] {
 with the same class under smth. */
 .righto {
   text-align: right;
+}
+.lefto {
+  text-align: left;
 }
 
 /* navbar style 1 */
