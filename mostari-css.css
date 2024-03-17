@@ -279,69 +279,6 @@ details summary[role=button] {
   margin-top: 1rem;
 }
 
-.col {
-  flex: 1 0 0%
-}
-
-.col-1 {
-  flex: 0 0 auto;
-  width: 8.33333333%;
-}
-
-.col-2 {
-  flex: 0 0 auto;
-  width: 16.66666667%
-}
-
-.col-3 {
-  flex: 0 0 auto;
-  width: 25%
-}
-
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.33333333%
-}
-
-.col-5 {
-  flex: 0 0 auto;
-  width: 41.66666667%
-}
-
-.col-6 {
-  flex: 0 0 auto;
-  width: 50%
-}
-
-.col-7 {
-  flex: 0 0 auto;
-  width: 58.33333333%
-}
-
-.col-8 {
-  flex: 0 0 auto;
-  width: 66.66666667%
-}
-
-.col-9 {
-  flex: 0 0 auto;
-  width: 75%
-}
-
-.col-10 {
-  flex: 0 0 auto;
-  width: 83.33333333%
-}
-
-.col-11 {
-  flex: 0 0 auto;
-  width: 91.66666667%
-}
-
-.col-12 {
-  flex: 0 0 auto;
-  width: 100%
-}
 
 .push-0 {
   margin-left: 5.55555555%
@@ -389,6 +326,54 @@ details summary[role=button] {
 
 .push-11 {
   margin-left: 91.66666667%
+}
+/* ------------------------------------- */
+.pull-0 {
+  margin-right: 5.55555555%
+}
+
+.pull-1 {
+  margin-right: 8.33333333%
+}
+
+.pull-2 {
+  margin-right: 16.66666667%;
+}
+
+.pull-3 {
+  margin-right: 25%
+}
+
+.pull-4 {
+  margin-right: 33.33333333%
+}
+
+.pull-5 {
+  margin-right: 41.66666667%
+}
+
+.pull-6 {
+  margin-right: 50%
+}
+
+.pull-7 {
+  margin-right: 58.33333333%
+}
+
+.pull-8 {
+  margin-right: 66.66666667%
+}
+
+.pull-9 {
+  margin-right: 75%
+}
+
+.pull-10 {
+  margin-right: 83.33333333%
+}
+
+.pull-11 {
+  margin-right: 91.66666667%
 }
 
 /* ---------------------------------- */
@@ -453,7 +438,7 @@ details summary[role=button] {
 }
 
 /* I will add prebuilt nav, cards, and accordions soon. Stay tuned, and happy coding! */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   body {
     font-size: 1rem;
   }
@@ -507,15 +492,19 @@ details summary[role=button] {
 
 @media (max-width: 767px) {
   body>header,
-  body>main,
-  body>footer {
+  body>main{
     width: 100%;
     margin-inline: auto;
     text-align: justify;
-    padding-inline: 2rem;
+    padding-inline: 0;
 
   }
-
+footer{
+  width: 100%;
+  margin-inline: auto;
+  text-align: justify;
+  padding-inline: 1rem;
+}
   .container {
     width: 100%;
     padding-inline: 1rem;
@@ -524,13 +513,13 @@ details summary[role=button] {
 
   .container2 {
     width: 100%;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     margin-inline: auto;
   }
 
   .container3 {
     width: 100%;
-    padding-inline: 4rem;
+    padding-inline: 0.5rem;
     margin-inline: auto;
   }
 }
@@ -555,23 +544,76 @@ details summary[role=button] {
   }
 }
 
-@media (max-width: 767px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 {
-    flex: 0 0 auto;
-    width: 100%;
+
+@media only screen and (min-width: 601px) {
+  .col {
+      flex: 1 0 0%;
+    }
+    
+    .col-1 {
+      flex: 0 0 auto;
+      width: 8.33333333%;;
+    }
+    
+    .col-2 {
+      flex: 0 0 auto;
+      width: 16.66666667%;
+    }
+    
+    .col-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+    
+    .col-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+    }
+    
+    .col-5 {
+      flex: 0 0 auto;
+      width: 41.66666667%;
+    }
+    
+    .col-6 {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+    
+    .col-7 {
+      flex: 0 0 auto;
+      width: 58.33333333%;
+    }
+    
+    .col-8 {
+      flex: 0 0 auto;
+      width: 66.66666667%;
+    }
+    
+    .col-9 {
+      flex: 0 0 auto;
+      width: 75%;
+    }
+    
+    .col-10 {
+      flex: 0 0 auto;
+      width: 83.33333333%;
+    }
+    
+    .col-11 {
+      flex: 0 0 auto;
+      width: 91.66666667%;
+    }
+    
+    .col-12 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
   }
 
+@media (max-width: 600px) {
+  
+  .push-0,
   .push-1,
   .push-2,
   .push-3,
@@ -586,6 +628,21 @@ details summary[role=button] {
     margin-left: 0;
   }
 
+  .pull-0,
+  .pull-1,
+  .pull-2,
+  .pull-3,
+  .pull-4,
+  .pull-5,
+  .pull-6,
+  .pull-7,
+  .pull-8,
+  .pull-9,
+  .pull-10,
+  .pull-11 {
+    margin-right: 0;
+  }
+
   .card {
     align-content: center;
     margin-left: 0;
@@ -597,6 +654,7 @@ with the same class under smth. */
 .righto {
   text-align: right;
 }
+
 .lefto {
   text-align: left;
 }
@@ -717,3 +775,4 @@ nav ul:first-child>li {
     padding-top: 1rem;
   }
 }
+
