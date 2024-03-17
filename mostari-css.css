@@ -194,6 +194,7 @@ input[type="button"]:focus {
   flex-direction: column;
   border-radius: .25rem;
   min-width: 250px;
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .card>.content {
@@ -216,6 +217,8 @@ input[type="button"]:focus {
   text-align: center;
   padding: 1rem 1rem;
   margin-top: auto;
+  background-color: #f4f5f6;
+  color: #415462;
 }
 
 .card>.img {
@@ -327,6 +330,7 @@ details summary[role=button] {
 .push-11 {
   margin-left: 91.66666667%
 }
+
 /* ------------------------------------- */
 .pull-0 {
   margin-right: 5.55555555%
@@ -491,20 +495,23 @@ details summary[role=button] {
 }
 
 @media (max-width: 767px) {
+
   body>header,
-  body>main{
+  body>main {
     width: 100%;
     margin-inline: auto;
     text-align: justify;
     padding-inline: 0;
 
   }
-footer{
-  width: 100%;
-  margin-inline: auto;
-  text-align: justify;
-  padding-inline: 1rem;
-}
+
+  footer {
+    width: 100%;
+    margin-inline: auto;
+    text-align: justify;
+    padding-inline: 1rem;
+  }
+
   .container {
     width: 100%;
     padding-inline: 1rem;
@@ -547,72 +554,73 @@ footer{
 
 @media only screen and (min-width: 601px) {
   .col {
-      flex: 1 0 0%;
-    }
-    
-    .col-1 {
-      flex: 0 0 auto;
-      width: 8.33333333%;;
-    }
-    
-    .col-2 {
-      flex: 0 0 auto;
-      width: 16.66666667%;
-    }
-    
-    .col-3 {
-      flex: 0 0 auto;
-      width: 25%;
-    }
-    
-    .col-4 {
-      flex: 0 0 auto;
-      width: 33.33333333%;
-    }
-    
-    .col-5 {
-      flex: 0 0 auto;
-      width: 41.66666667%;
-    }
-    
-    .col-6 {
-      flex: 0 0 auto;
-      width: 50%;
-    }
-    
-    .col-7 {
-      flex: 0 0 auto;
-      width: 58.33333333%;
-    }
-    
-    .col-8 {
-      flex: 0 0 auto;
-      width: 66.66666667%;
-    }
-    
-    .col-9 {
-      flex: 0 0 auto;
-      width: 75%;
-    }
-    
-    .col-10 {
-      flex: 0 0 auto;
-      width: 83.33333333%;
-    }
-    
-    .col-11 {
-      flex: 0 0 auto;
-      width: 91.66666667%;
-    }
-    
-    .col-12 {
-      flex: 0 0 auto;
-      width: 100%;
-    }
+    flex: 1 0 0%;
   }
 
+  .col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+    ;
+  }
+
+  .col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
-  
+
   .push-0,
   .push-1,
   .push-2,
@@ -775,4 +783,3 @@ nav ul:first-child>li {
     padding-top: 1rem;
   }
 }
-
